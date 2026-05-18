@@ -1,0 +1,40 @@
+{
+  "irVersion": "1.0",
+  "project": "prism-core",
+  "repository": "https://github.com/grokify/prism-core",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "maintainers": ["grokify"],
+  "releases": [
+    {
+      "version": "v0.1.0",
+      "date": "2025-05-18",
+      "highlights": [
+        { "description": "Initial release of PRISM Core providing shared primitives for the PRISM ecosystem" }
+      ],
+      "added": [
+        { "description": "Domain types with 10 domains: security, operations, quality, platform, AI, data, product, engineering, compliance, customer", "commit": "695c392" },
+        { "description": "Status types: document status, health status, priority, MoSCoW, capability status", "commit": "695c392" },
+        { "description": "Metadata struct for common document metadata fields", "commit": "bafc89e" },
+        { "description": "Person and Team types with Team Topologies support (stream-aligned, platform, enabling, overlay)", "commit": "bafc89e" },
+        { "description": "Layer types: 6 value stream layers (requirements, code, infra, runtime, adoption, support)", "commit": "7a7cef4" },
+        { "description": "Stage types: 5 lifecycle stages (design, build, test, runtime, response)", "commit": "7a7cef4" },
+        { "description": "Maturity level types: M1-M5 model with names and descriptions", "commit": "7a7cef4" },
+        { "description": "Framework mappings: NIST (CSF, 800-53, RMF, AI RMF), FedRAMP, ISO 27001, SOC 2, MITRE ATT&CK, CIS, DORA, SRE", "commit": "40455c7" },
+        { "description": "Risk types with impact, probability, and status enumerations", "commit": "40455c7" },
+        { "description": "SLI types: availability, latency, throughput, error rate, freshness, correctness, coverage, durability", "commit": "95f43d1" },
+        { "description": "Trend types with direction (up, down, flat, unknown) and TrendInfo struct", "commit": "95f43d1" },
+        { "description": "Helper functions: AllDomains(), ValidDomain(), AllLayers(), ValidLayer(), AllStages(), ValidStage(), etc.", "commit": "695c392" }
+      ],
+      "documentation": [
+        { "description": "README with package documentation and PRISM ecosystem diagram", "commit": "7479d56" },
+        { "description": "v0.1.0 release notes in docs/releases/", "commit": "4ecea97" }
+      ],
+      "build": [
+        { "description": "Go module initialization", "commit": "53e9d59" },
+        { "description": "GitHub Actions CI/CD workflows", "commit": "3aabdca" },
+        { "description": "MIT license", "commit": "2ea6dde" }
+      ]
+    }
+  ]
+}
