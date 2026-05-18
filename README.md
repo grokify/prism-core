@@ -141,11 +141,11 @@ Value stream layers and lifecycle stages:
 
 Compliance and security framework constants:
 
-- **NIST**: CSF, CSF 2.0, 800-53, 800-171, RMF, AI RMF
-- **FedRAMP**: High, Moderate, Low
 - **Industry**: ISO 27001, SOC 2, PCI DSS, HIPAA, GDPR
-- **Security**: MITRE ATT&CK, OWASP, CIS Controls
 - **Operations**: DORA, SRE
+- **NIST**: CSF, CSF 2.0, 800-53, 800-171, RMF, AI RMF
+- **Security**: MITRE ATT&CK, OWASP, CIS Controls
+- **FedRAMP**: High, Moderate, Low
 
 ### Risk Types (`risk.go`)
 
