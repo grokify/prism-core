@@ -191,23 +191,23 @@ type TrendInfo struct {
 ## PRISM Ecosystem
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                         PRISM Core                              │
-│              (Shared Primitives & Types)                        │
-└─────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────┐
+│                         PRISM Core                        │
+│              (Shared Primitives & Types)                  │
+└───────────────────────────────────────────────────────────┘
                               │
           ┌───────────────────┼───────────────────┐
           │                   │                   │
           ▼                   ▼                   ▼
-┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
-│ PRISM Capability│ │PRISM Intelligence│ │ PRISM Execution │
-│                 │ │                 │ │                 │
-│ "What we need"  │ │"How we measure" │ │  "How we act"   │
-│                 │ │                 │ │                 │
-│ - Capabilities  │ │ - Metrics       │ │ - Initiatives   │
-│ - Requirements  │ │ - SLIs/SLOs     │ │ - Roadmaps      │
-│ - Gaps          │ │ - Assessments   │ │ - Tasks         │
-└─────────────────┘ └─────────────────┘ └─────────────────┘
+┌──────────────────┐ ┌──────────────────┐ ┌─────────────────┐
+│ PRISM Capability │ │PRISM Intelligence│ │ PRISM Execution │
+│                  │ │                  │ │                 │
+│ "What we need"   │ │"How we measure"  │ │  "How we act"   │
+│                  │ │                  │ │                 │
+│ - Capabilities   │ │ - Metrics        │ │ - Initiatives   │
+│ - Requirements   │ │ - SLIs/SLOs      │ │ - Roadmaps      │
+│ - Gaps           │ │ - Assessments    │ │ - Tasks         │
+└──────────────────┘ └──────────────────┘ └─────────────────┘
 ```
 
 ## License
