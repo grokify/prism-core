@@ -9,7 +9,7 @@
     {
       "version": "v0.2.0",
       "date": "2026-06-06",
-      "commit": "4d7a7c6",
+      "commit": "dee2c08",
       "highlights": [
         { "description": "Remove Priority and MoSCoW types - use github.com/grokify/priority-frameworks instead" }
       ],
