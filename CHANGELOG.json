@@ -7,6 +7,29 @@
   "maintainers": ["grokify"],
   "releases": [
     {
+      "version": "v0.2.0",
+      "date": "2026-06-06",
+      "commit": "4d7a7c6",
+      "highlights": [
+        { "description": "Remove Priority and MoSCoW types - use github.com/grokify/priority-frameworks instead" }
+      ],
+      "breaking": [
+        { "description": "Removed `PriorityCritical`, `PriorityHigh`, `PriorityMedium`, `PriorityLow` constants", "commit": "4d7a7c6" },
+        { "description": "Removed `ValidPriority()` and `PriorityWeight()` functions", "commit": "4d7a7c6" },
+        { "description": "Removed `MoSCoWMust`, `MoSCoWShould`, `MoSCoWCould`, `MoSCoWWont` constants", "commit": "4d7a7c6" },
+        { "description": "Removed `ValidMoSCoW()` and `MoSCoWWeight()` functions", "commit": "4d7a7c6" }
+      ],
+      "upgradeGuide": [
+        { "description": "Replace `prism.PriorityCritical` with `pf.Severity().Parse(\"critical\")` from priority-frameworks" },
+        { "description": "Replace `prism.ValidPriority(p)` with `pf.Severity().Parse(p) != nil`" },
+        { "description": "Replace `prism.PriorityWeight(p)` with `pf.Normalize(pf.Severity(), p)`" },
+        { "description": "Replace `prism.MoSCoWMust` with `pf.MoSCoW().Parse(\"must\")`" }
+      ],
+      "documentation": [
+        { "description": "Update README frameworks section", "commit": "dd955ee" }
+      ]
+    },
+    {
       "version": "v0.1.0",
       "date": "2026-05-18",
       "highlights": [
