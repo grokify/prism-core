@@ -30,6 +30,11 @@ const (
 	// Operations Frameworks
 	FrameworkDORA = "DORA" // DevOps Research and Assessment
 	FrameworkSRE  = "SRE"  // Site Reliability Engineering
+
+	// Developer Productivity Frameworks
+	FrameworkSPACE   = "SPACE"    // Satisfaction, Performance, Activity, Communication, Efficiency (Forsgren et al., 2021)
+	FrameworkAIDORA  = "AI_DORA"  // AI-Modified DevOps Research and Assessment
+	FrameworkAISPACE = "AI_SPACE" // AI-Modified Developer Productivity Framework
 )
 
 // NIST CSF Function constants.
@@ -72,6 +77,9 @@ func AllFrameworks() []string {
 		FrameworkOWASP,
 		FrameworkDORA,
 		FrameworkSRE,
+		FrameworkSPACE,
+		FrameworkAIDORA,
+		FrameworkAISPACE,
 	}
 }
 
@@ -117,6 +125,24 @@ func OperationsFrameworks() []string {
 	return []string{
 		FrameworkDORA,
 		FrameworkSRE,
+		FrameworkAIDORA,
+	}
+}
+
+// DeveloperProductivityFrameworks returns developer productivity frameworks.
+func DeveloperProductivityFrameworks() []string {
+	return []string{
+		FrameworkSPACE,
+		FrameworkAISPACE,
+	}
+}
+
+// AIFrameworks returns AI-enhanced frameworks.
+func AIFrameworks() []string {
+	return []string{
+		FrameworkNISTAIRMF,
+		FrameworkAIDORA,
+		FrameworkAISPACE,
 	}
 }
 
@@ -154,6 +180,9 @@ func FrameworkDisplayName(framework string) string {
 		FrameworkOWASP:       "OWASP",
 		FrameworkDORA:        "DORA",
 		FrameworkSRE:         "SRE",
+		FrameworkSPACE:       "SPACE",
+		FrameworkAIDORA:      "AI-DORA",
+		FrameworkAISPACE:     "AI-SPACE",
 	}
 	if name, ok := names[framework]; ok {
 		return name
