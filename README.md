@@ -18,7 +18,9 @@
  [goreport-url]: https://goreportcard.com/report/github.com/grokify/prism-core
  [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/grokify/prism-core
  [docs-godoc-url]: https://pkg.go.dev/github.com/grokify/prism-core
- [viz-svg]: https://img.shields.io/badge/visualization-Go-blue.svg
+ [docs-mkdoc-svg]: https://img.shields.io/badge/Go-dev%20guide-blue.svg
+ [docs-mkdoc-url]: https://grokify.github.io/prism-core
+ [viz-svg]: https://img.shields.io/badge/visualizaton-Go-blue.svg
  [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=grokify%2Fprism-core
  [loc-svg]: https://tokei.rs/b1/github/grokify/prism-core
  [repo-url]: https://github.com/grokify/prism-core
