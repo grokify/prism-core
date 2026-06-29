@@ -7,6 +7,23 @@
   "maintainers": ["grokify"],
   "releases": [
     {
+      "version": "v0.3.0",
+      "date": "2026-06-28",
+      "highlights": [
+        { "description": "Add developer productivity and AI-enhanced framework support" }
+      ],
+      "added": [
+        { "description": "Add `FrameworkSPACE` constant for SPACE developer productivity framework (Forsgren et al., 2021)", "commit": "379dd29" },
+        { "description": "Add `FrameworkAIDORA` constant for AI-Modified DORA metrics", "commit": "379dd29" },
+        { "description": "Add `FrameworkAISPACE` constant for AI-Modified SPACE framework", "commit": "379dd29" },
+        { "description": "Add `DeveloperProductivityFrameworks()` function returning SPACE and AI-SPACE", "commit": "379dd29" },
+        { "description": "Add `AIFrameworks()` function returning all AI-enhanced frameworks", "commit": "379dd29" }
+      ],
+      "documentation": [
+        { "description": "Update README shields", "commit": "c3ac8ca" }
+      ]
+    },
+    {
       "version": "v0.2.0",
       "date": "2026-06-06",
       "commit": "dee2c08",
