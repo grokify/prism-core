@@ -62,8 +62,9 @@ Status enumerations for documents and workflows:
 
 - **Document Status**: `StatusDraft`, `StatusApproved`, `StatusActive`, etc.
 - **Health Status**: `HealthGreen`, `HealthYellow`, `HealthRed`
-- **Priority**: `PriorityCritical`, `PriorityHigh`, `PriorityMedium`, `PriorityLow`
-- **MoSCoW**: `MoSCoWMust`, `MoSCoWShould`, `MoSCoWCould`, `MoSCoWWont`
+- **Capability Status**: `CapabilityStatusPlanned`, `CapabilityStatusInProgress`, `CapabilityStatusComplete`
+
+> **Note**: Priority and MoSCoW types have been moved to [priority-frameworks](https://github.com/grokify/priority-frameworks) as of v0.2.0.
 
 ### Metadata (`metadata.go`)
 
@@ -141,13 +142,15 @@ Value stream layers and lifecycle stages:
 
 ### Frameworks (`framework.go`)
 
-Compliance and security framework constants:
+Compliance, security, and productivity framework constants:
 
 - **Industry**: ISO 27001, SOC 2, PCI DSS, HIPAA, GDPR
 - **Operations**: DORA, SRE
 - **NIST**: CSF, CSF 2.0, 800-53, 800-171, RMF, AI RMF
 - **Security**: MITRE ATT&CK, OWASP, CIS Controls
 - **FedRAMP**: High, Moderate, Low
+- **Developer Productivity**: SPACE, AI-SPACE
+- **AI-Enhanced**: AI-DORA, AI-SPACE
 
 ### Risk Types (`risk.go`)
 
