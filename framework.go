@@ -35,6 +35,9 @@ const (
 	FrameworkSPACE   = "SPACE"    // Satisfaction, Performance, Activity, Communication, Efficiency (Forsgren et al., 2021)
 	FrameworkAIDORA  = "AI_DORA"  // AI-Modified DevOps Research and Assessment
 	FrameworkAISPACE = "AI_SPACE" // AI-Modified Developer Productivity Framework
+
+	// Platform Engineering Frameworks
+	FrameworkSCALE = "SCALE" // Standards, Consumption, Automation, Leverage, Effectiveness
 )
 
 // NIST CSF Function constants.
@@ -80,6 +83,7 @@ func AllFrameworks() []string {
 		FrameworkSPACE,
 		FrameworkAIDORA,
 		FrameworkAISPACE,
+		FrameworkSCALE,
 	}
 }
 
@@ -137,6 +141,13 @@ func DeveloperProductivityFrameworks() []string {
 	}
 }
 
+// PlatformEngineeringFrameworks returns platform engineering frameworks.
+func PlatformEngineeringFrameworks() []string {
+	return []string{
+		FrameworkSCALE,
+	}
+}
+
 // AIFrameworks returns AI-enhanced frameworks.
 func AIFrameworks() []string {
 	return []string{
@@ -183,6 +194,7 @@ func FrameworkDisplayName(framework string) string {
 		FrameworkSPACE:       "SPACE",
 		FrameworkAIDORA:      "AI-DORA",
 		FrameworkAISPACE:     "AI-SPACE",
+		FrameworkSCALE:       "SCALE",
 	}
 	if name, ok := names[framework]; ok {
 		return name
