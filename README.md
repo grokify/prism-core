@@ -147,7 +147,17 @@ Compliance, security, and productivity framework constants:
 - **Security**: MITRE ATT&CK, OWASP, CIS Controls
 - **FedRAMP**: High, Moderate, Low
 - **Developer Productivity**: SPACE, AI-SPACE
+- **Platform Engineering**: SCALE
 - **AI-Enhanced**: AI-DORA, AI-SPACE
+
+### SCALE Aspects (`scale.go`)
+
+Constants and helpers for the SCALE platform engineering framework — Standards,
+Consumption, Automation, Leverage, Effectiveness:
+
+- Aspect constants: `SCALEAspectStandards`, `SCALEAspectConsumption`, `SCALEAspectAutomation`, `SCALEAspectLeverage`, `SCALEAspectEffectiveness`
+- Consumption kinds: `SCALEConsumptionKindAdoption`, `SCALEConsumptionKindConformance`
+- Helpers: `AllSCALEAspects()`, `ValidSCALEAspect()`, `SCALEAspectLetter()`, `SCALEAspectDisplayName()`, `SCALEAspectDescription()`, `AllSCALEConsumptionKinds()`, `ValidSCALEConsumptionKind()`
 
 ### Risk Types (`risk.go`)
 
