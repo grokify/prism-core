@@ -7,6 +7,23 @@
   "maintainers": ["grokify"],
   "releases": [
     {
+      "version": "v0.4.0",
+      "date": "2026-07-25",
+      "highlights": [
+        { "description": "Add SCALE platform engineering framework support" }
+      ],
+      "added": [
+        { "description": "Add `FrameworkSCALE` constant for the SCALE platform engineering framework (Standards, Consumption, Automation, Leverage, Effectiveness)", "commit": "8cd46d0" },
+        { "description": "Add `PlatformEngineeringFrameworks()` helper function", "commit": "8cd46d0" },
+        { "description": "Add `scale.go` with SCALE aspect constants (`SCALEAspectStandards`, `SCALEAspectConsumption`, `SCALEAspectAutomation`, `SCALEAspectLeverage`, `SCALEAspectEffectiveness`)", "commit": "8cd46d0" },
+        { "description": "Add SCALE consumption kind constants (`SCALEConsumptionKindAdoption`, `SCALEConsumptionKindConformance`)", "commit": "8cd46d0" },
+        { "description": "Add helper functions: `AllSCALEAspects()`, `ValidSCALEAspect()`, `SCALEAspectLetter()`, `SCALEAspectDisplayName()`, `SCALEAspectDescription()`, `AllSCALEConsumptionKinds()`, `ValidSCALEConsumptionKind()`", "commit": "8cd46d0" }
+      ],
+      "documentation": [
+        { "description": "Update README shields", "commit": "49dec97" }
+      ]
+    },
+    {
       "version": "v0.3.0",
       "date": "2026-06-28",
       "highlights": [
