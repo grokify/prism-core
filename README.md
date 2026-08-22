@@ -159,6 +159,21 @@ Consumption, Automation, Leverage, Effectiveness:
 - Consumption kinds: `SCALEConsumptionKindAdoption`, `SCALEConsumptionKindConformance`
 - Helpers: `AllSCALEAspects()`, `ValidSCALEAspect()`, `SCALEAspectLetter()`, `SCALEAspectDisplayName()`, `SCALEAspectDescription()`, `AllSCALEConsumptionKinds()`, `ValidSCALEConsumptionKind()`
 
+### Capability References (`capability.go`)
+
+A thin, ecosystem-shared shape for referencing a capability by ID with the relation an entity has to it, so any PRISM module (prism-capability, prism-roadmap, prism-maturity) references capabilities the same way instead of inventing its own vocabulary:
+
+```go
+type CapabilityRef struct {
+    CapabilityID string `json:"capabilityId"`
+    Relation     string `json:"relation"`
+    Rationale    string `json:"rationale,omitempty"`
+}
+```
+
+- Relation constants: `CapabilityRelationEnables`, `CapabilityRelationImproves`, `CapabilityRelationDependsOn`
+- Helpers: `AllCapabilityRelations()`, `ValidCapabilityRelation()`, `CapabilityRelationDisplayName()`
+
 ### Risk Types (`risk.go`)
 
 Risk assessment primitives:
