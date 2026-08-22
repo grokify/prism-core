@@ -7,6 +7,18 @@
   "maintainers": ["grokify"],
   "releases": [
     {
+      "version": "v0.5.0",
+      "date": "2026-08-22",
+      "highlights": [
+        { "description": "Add shared CapabilityRelation/CapabilityRef primitives for cross-module capability references" }
+      ],
+      "added": [
+        { "description": "Add `CapabilityRelationEnables`, `CapabilityRelationImproves`, `CapabilityRelationDependsOn` constants", "commit": "0e68147" },
+        { "description": "Add `AllCapabilityRelations()`, `ValidCapabilityRelation()`, `CapabilityRelationDisplayName()` helper functions", "commit": "0e68147" },
+        { "description": "Add `CapabilityRef` struct: a thin, ecosystem-shared shape (CapabilityID, Relation, Rationale) for referencing a capability without depending on prism-capability's full domain model", "commit": "0e68147" }
+      ]
+    },
+    {
       "version": "v0.4.0",
       "date": "2026-07-25",
       "highlights": [
