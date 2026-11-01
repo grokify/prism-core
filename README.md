@@ -40,6 +40,12 @@ PRISM Core provides foundational types and constants used across the PRISM ecosy
 go get github.com/grokify/prism-core
 ```
 
+## Documentation
+
+- [User guides](docs/guides/README.md), starting with [product lines](docs/guides/product-lines.md)
+- [Release notes](docs/releases/) for each version
+- [API reference](https://pkg.go.dev/github.com/grokify/prism-core) on pkg.go.dev
+
 ## Packages
 
 ### Domain Types (`domain.go`)
@@ -173,6 +179,26 @@ type CapabilityRef struct {
 
 - Relation constants: `CapabilityRelationEnables`, `CapabilityRelationImproves`, `CapabilityRelationDependsOn`
 - Helpers: `AllCapabilityRelations()`, `ValidCapabilityRelation()`, `CapabilityRelationDisplayName()`
+
+### Product Lines (`productline.go`)
+
+A top-level product concept that roadmap items and execution work both reference, with its place on the portfolio axis and an optional market position:
+
+```go
+type ProductLine struct {
+    ID             string          `json:"id"`
+    Name           string          `json:"name"`
+    Kind           ProductLineKind `json:"kind"`
+    ParentID       string          `json:"parentId,omitempty"`
+    MarketPosition MarketPosition  `json:"marketPosition,omitempty"`
+}
+```
+
+- Kind constants: `ProductLineKindVertical`, `ProductLineKindPlatform`, `ProductLineKindMarket`
+- Market position constants, inspired by the Boston Consulting Group's growth-share matrix: `MarketPositionStar`, `MarketPositionCashCow`, `MarketPositionQuestionMark`, `MarketPositionDog`, `MarketPositionEnabler`
+- Helpers: `ProductLine.Validate()`, `AllProductLineKinds()`, `ValidProductLineKind()`, `AllMarketPositions()`, `ValidMarketPosition()`, `ScopeFor()`
+
+See the [product lines guide](docs/guides/product-lines.md).
 
 ### Risk Types (`risk.go`)
 
