@@ -7,6 +7,49 @@
   "maintainers": ["grokify"],
   "releases": [
     {
+      "version": "v0.6.0",
+      "date": "2026-11-01",
+      "highlights": [
+        {
+          "description": "Add shared ProductLine and MarketPosition primitives so planning and execution tools reference the same product lines"
+        }
+      ],
+      "added": [
+        {
+          "description": "Add `ProductLine` struct (ID, Name, Kind, ParentID, MarketPosition) with camelCase JSON tags and a `Validate()` method",
+          "commit": "c9a9c05"
+        },
+        {
+          "description": "Add `ProductLineKindVertical`, `ProductLineKindPlatform`, `ProductLineKindMarket` constants and `AllProductLineKinds()`, `ValidProductLineKind()` helpers",
+          "commit": "c9a9c05"
+        },
+        {
+          "description": "Add `MarketPosition` type, inspired by the Boston Consulting Group's growth-share matrix, with `MarketPositionStar`, `MarketPositionCashCow`, `MarketPositionQuestionMark`, `MarketPositionDog`, `MarketPositionEnabler` constants and `AllMarketPositions()`, `ValidMarketPosition()` helpers",
+          "commit": "c9a9c05"
+        },
+        {
+          "description": "Add `ProductLineScope` (`ScopeUnknown`, `ScopeLineSpecific`, `ScopeCrossLine`, `ScopeAllLines`) and `ScopeFor()`, which derives an initiative's scope from the lines it references",
+          "commit": "c9a9c05"
+        }
+      ],
+      "tests": [
+        {
+          "description": "Cover product line validation, the kind and position lists, `ScopeFor`, and JSON field names",
+          "commit": "0a21e37"
+        }
+      ],
+      "documentation": [
+        {
+          "description": "Add a product lines user guide in `docs/guides/`",
+          "commit": "73c06be"
+        },
+        {
+          "description": "Add release notes for v0.6.0",
+          "commit": "5f67802"
+        }
+      ]
+    },
+    {
       "version": "v0.5.0",
       "date": "2026-08-22",
       "highlights": [
